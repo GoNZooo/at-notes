@@ -1,0 +1,54 @@
+{
+  "scopeName": "at-note.injection",
+  "injectionSelector": "L:comment",
+  "patterns": [
+    {
+      "include": "#at-note-todo"
+    },
+    {
+      "include": "#at-note-note"
+    },
+    {
+      "include": "#at-note-warn"
+    },
+    {
+      "include": "#at-note-research"
+    }
+  ],
+  "repository": {
+    "at-note-todo": {
+      "match": "@TODO(\\(.+\\))?:",
+      "name": "meta.embedded.at-note.todo"
+    },
+    "at-note-note": {
+      "match": "@NOTE(\\(.+\\))?:",
+      "name": "meta.embedded.at-note.note"
+    },
+    "at-note-warn": {
+      "match": "@WARN(\\(.+\\))?:",
+      "name": "meta.embedded.at-note.warn"
+    },
+    "at-note-research": {
+      "match": "@RESEARCH(\\(.+\\))?:",
+      "name": "meta.embedded.at-note.research"
+    }
+  },
+  "tokenColors": [
+      {
+          "name": "At-Note TODO",
+          "scope": "meta.embedded.at-note.todo"
+      },
+      {
+          "name": "At-Note NOTE",
+          "scope": "meta.embedded.at-note.note"
+      },
+      {
+          "name": "At-Note WARN",
+          "scope": "meta.embedded.at-note.warn"
+      },
+      {
+          "name": "At-Note RESEARCH",
+          "scope": "meta.embedded.at-note.research"
+      }
+  ]
+}
