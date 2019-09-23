@@ -29,6 +29,20 @@
           "meta.embedded.at-note.research": "other"
         }
       }
+    ],
+    "problemMatchers": [
+      {
+        "name": "at-note-todo",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.+):(\\d+):(\\d):(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "message": 4
+        },
+        "severity": "warning"
+      }
     ]
   },
   "scripts": {

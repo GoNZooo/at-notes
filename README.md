@@ -62,3 +62,26 @@ The example above is rendered as follows given the example token settings below:
   }
 }
 ```
+
+## TODO search for your project
+
+I've created a problem matcher for `@TODO` tags in the project. It can be used
+with a custom tags specifying the following in `tasks.json`, in this example
+using `rg` (`ripgrep`):
+
+```json
+{
+  "type": "shell",
+  "command": "rg",
+  "args": ["--vimgrep", "\"@TODO`(`(.+`)`)?:\"", "."],
+  "problemMatcher": "$at-note-todo",
+  "label": "todo search"
+}
+```
+
+The problem matcher name is `$at-note-todo` and it matches lines that look like
+`relativefilename:line:column:// @TODO:` or
+`relativefilename:line:column:// @TODO(<something here>):`
+
+When the task is done the problem matcher will show your TODO positions in the
+"Problems" tab.
