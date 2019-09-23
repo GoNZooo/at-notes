@@ -2,7 +2,7 @@
   "name": "at-notes",
   "displayName": "at-notes",
   "description": "Highlighter and code search for at-notes",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -33,7 +33,10 @@
     "problemMatchers": [
       {
         "name": "at-note-todo",
-        "fileLocation": ["relative", "${workspaceFolder}"],
+        "fileLocation": [
+          "relative",
+          "${workspaceFolder}"
+        ],
         "pattern": {
           "regexp": "^(.+):(\\d+):(\\d):(.*)$",
           "file": 1,
