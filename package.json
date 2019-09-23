@@ -19,7 +19,8 @@
         "path": "./syntaxes/at-notes.tmGrammar.json",
         "scopeName": "at-note.injection",
         "injectTo": [
-          "source"
+          "source",
+          "text"
         ],
         "tokenTypes": {
           "meta.embedded.at-note.todo": "other",
