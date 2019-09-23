@@ -51,5 +51,6 @@
   "repository": {
     "url": "https://github.com/GoNZooo/at-notes"
   },
-  "publisher": "GoNZooo"
+  "publisher": "GoNZooo",
+  "license": "BSD-2-Clause"
 }
