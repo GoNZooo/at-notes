@@ -2,7 +2,7 @@
   "name": "at-notes",
   "displayName": "at-notes",
   "description": "Highlighter and code search for at-notes",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -62,8 +62,8 @@
     "@types/vscode": "^1.38.0",
     "glob": "^7.1.4",
     "mocha": "^6.1.4",
-    "typescript": "^3.3.1",
     "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
     "vscode-test": "^1.2.0"
   },
   "repository": {
