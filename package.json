@@ -2,7 +2,7 @@
   "name": "at-notes",
   "displayName": "at-notes",
   "description": "Highlighter and code search for at-notes",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "engines": {
     "vscode": "^1.38.0"
   },
